@@ -1,3 +1,5 @@
+(le français suit)
+
 # Welcome to the design system project (Discovery)
 
 This repository provides some information and documentation about the work being done by the design system team.
