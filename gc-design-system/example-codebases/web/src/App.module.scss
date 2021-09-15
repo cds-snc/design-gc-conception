@@ -1,0 +1,91 @@
+// The Diez web compiler creates shared styles for Sass and CSS. The styles
+// imported here can be found at `build/diez-gc-design-system-web/static/styles.scss`,
+// relative to the project root.
+@import '@diez/styles.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.masthead {
+  // Sass variables from `@diez/styles` provide a variety of directives. Here,
+  // we are using colors, URLs, and numbers.
+  background-image: $images-masthead-3x;
+  background-size: $images-masthead-size;
+  height: 194px;
+}
+
+.mastheadContainer {
+  background-image: $palette-header-background;
+}
+
+.title {
+  // Higher-order design tokens like `Typograph` provide reusable mixins.
+  @include typography-heading1();
+}
+
+.caption {
+  @include typography-caption();
+  margin-top: $layout-values-spacing-small-px;
+}
+
+.body {
+  @include typography-body();
+  margin-top: $layout-values-spacing-medium-px;
+}
+
+.contentContainer {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  background-color: $palette-content-background;
+}
+
+.content {
+  width: 684px;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+.innerContent {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  padding-top: $layout-values-spacing-large-px;
+  padding-right: $layout-values-spacing-medium-px;
+  padding-bottom: $layout-values-spacing-medium-px;
+  padding-left: $layout-values-spacing-medium-px;
+}
+
+.icon {
+  @include images-logo-background-image();
+  @include shadows-logo-filter();
+  transform: translate(0, -50%);
+  position: absolute;
+  margin-left: $layout-values-spacing-medium-px;
+}
+
+.animationContainer {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.animation {
+  width: 174px;
+  height: 165px;
+}
+
+.footer {
+  @include typography-body();
+  margin-top: $layout-values-spacing-medium-px;
+}

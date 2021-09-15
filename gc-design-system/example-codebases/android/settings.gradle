@@ -1,0 +1,2 @@
+include ':app', ':diez'
+project(':diez').projectDir = new File("${new File("../../design-language/build").absolutePath}/diez-gc-design-system-android")
