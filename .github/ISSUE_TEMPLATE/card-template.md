@@ -16,5 +16,12 @@ assignees: ''
 **Deliverables**
 - 
 
+**Estimated Effort**
+- XS: 1 to 2 hours
+- S: half a day
+- M: 1-2 day
+- L: 1 week
+- XL: Move to an epic
+
 **Out of scope**
 -
