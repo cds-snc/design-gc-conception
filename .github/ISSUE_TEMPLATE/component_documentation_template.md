@@ -1,5 +1,5 @@
 ---
-name: Component Documentation Card template
+name: Component Docu. Card template
 about: Template to use when creating documentation tasks
 title: ''
 labels: ''
