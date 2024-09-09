@@ -1,28 +1,34 @@
 ---
-name: Component Docu. Card template
-about: Template to use when creating documentation tasks
+name: Build content. Card template
+about: Template to use when creating content tasks
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Summary:** Documentation of component guidance in EN for the XXXX component on the Design System website.
+**Summary**: Card to capture the delivery needed for all content related work in EN and FR when adding a new item in the GC Design System on all its touch point : Figma, code and documentation website .
 Including use cases, how to use guidance, accessibility guidelines and more.
 
-**Acceptance Criteria:**
+**Owner** : content designer
 
-- [ ] Component Kickoff
-- [ ] Component review
-- [ ] Sync with Dev and Design
-- [ ] Research and consulting other design libraries
-- [ ] Component ID (name, definition, example image 
-- [ ] Use case (when to use guidance & related components)  
-- [ ] How to use guidance 
-- [ ] Accessibility guidelines
-- [ ] Inclusive language
-- [ ] Descriptive text for images
-- [ ] Translation & Localization
-- [ ] Bilingual review – content design
-- [ ] Ensure consistency: ordering, terminology, high level voice/tone/style 
-- [ ] Final review
+**Validation** : Design lead as needed
+
+**Context** : additional information to complete work
+Add here all pertinent links , previous work done or informations related to the build of this particular component/template
+
+### Definition of done :
+- []  Validation of Component ID (name, definition, example image) is validated
+- []  Use case as detailed in requirement doc is reviewed
+- []  Content guidance for the Design and accessibility section of the component has been reviewed with designer
+- []  Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
+- []  Identify and write component copy: set labels, error messages, or other copy, I18N code elements
+- []  Sent to Translation & Localization and tag
+- []  Bilingual review is done
+
+### Acceptance criteria
+- [] Has EN and FR guidance
+- [] Plain language
+- [] Consistent with previous lexicon used in GCDS.
+- [] Writer does not flag any problem
+- [] Descriptive text for images are created as needed
