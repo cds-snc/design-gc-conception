@@ -6,33 +6,34 @@ labels: ''
 assignees: ''
 
 ---
-
 **Summary:** Development of the XXXXX component.
-Develop on component branch, push to staging and push to prod when approved.
+Develop on component branch, push to staging and flag ready to merge when reviwed.
 
-**Acceptance Criteria:**
+Owner : dev assigned on the card 
 
-- [ ] Component kickoff
-- [ ] Sync with Design
-- [ ] Requirements documentation
-- [ ] Requirements doc: Consider edge cases
-- [ ] Requirements doc: Describe component properties
-- [ ] Review of requirements doc
+**Definition of done:**  
+- [ ] Prior to doing work, clarify scope of ticket with the designers (dev design sync or slack) and adjust if necessary
+- [ ] Check with DTO if there are upcoming changes to this component or potential impact if we were to update the component
+- [ ] Consider edge cases
+- [ ] Describe component properties
+- [ ] Update Requirements doc with agreed specifications
 - [ ] Develop the component according to the requirements doc and design specs
 - [ ] Add component to storybook
 - [ ] Write draft of dev guidance
+- [ ] Handoff from draft dev guidance to documentation lead and tag the content owner 
+- [ ] Code review
+- [ ] After PR approval, merge component to staging
+
+**Acceptance criteria:** 
 - [ ] Sync dev properties with Figma properties (design + dev)
-- [ ] Handoff from draft dev guidance to documentation author/lead
+- [ ] Passes storybook a11y test without any violation
 - [ ] WCAG Goal can be completed using a screen reader.
 - [ ] WCAG Visual elements observe color contrast requirements.
 - [ ] WCAG Manual accessibility testing meets WCAG 2.1 AA requirements.
 - [ ] Provides equal service in French and English.
-- [ ] Comparison with official policy, documented reasons for deviation if any
-- [ ] Final sync with Design
-- [ ] [Policy review](https://www.figma.com/file/p0eiLxdme1g93sIuggjipR/Colour-%26-typography-differences-GCDS-vs.-Canada.ca?type=design&node-id=0-1&t=kkavFCQ74dMoZw6V-0)
-- [ ] Code review
-- [ ] After PR approval, merge component to staging
-- [ ] Review from Design
-- [ ] Review from Policy
-- [ ] Note: reviews could be done on Storybook staging
-- [ ] Push to prod
+- [ ] Dev peer reviews 
+
+**Deliverables:** 
+- [ ]Proposal guidance handed off to content
+- [ ]Requirement doc updated 
+- [ ]Pull request, with approvals. Do not merge. 
