@@ -1,0 +1,29 @@
+---
+name: Requirement doc template
+about: Template to use when creating requirement documentation to secure alignment, decisions and specifications of a component. Can be used when working on a new component or updating existing ones as the requirement doc will have to be updated too
+
+title: ''
+labels: ''
+assignees: ''
+---
+
+**Summary:** Document of all requirements and specifications of the XXXXX component.
+Document and iterate on requirement and related decisions for a component as we build it. Review and ensure alignment when build is done to ensure consistency between build product and speficiations
+Owner : dev/designer duo assigned
+
+**Validation : Product Manager** 
+
+**Definition of done:**
+- [ ]Created based on this template 
+- [ ]all decisions and alignment on this component are summed up in this doc , supported by rationale and screen capture when needed
+- [ ]Link dev and design deliverables 
+- [ ]When build is done for dev and design and content, dev/design hand off this doc to PM
+- [ ]PM has reviewed and gives go for release based on all documented info and build
+
+**Acceptance criteria**
+- [ ]Design has update requirement doc
+- [ ]Dev has updated requirement doc 
+- [ ]PM has reviewed 
+
+**Deliverable**
+- [ ]Requirement doc up to date
