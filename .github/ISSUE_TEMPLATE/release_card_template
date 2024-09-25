@@ -1,0 +1,33 @@
+---
+name: Release card template
+about: Template to use when build cards are done and we're ready to release a new or updated component / template 
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+**Summary:** Release of the XXXX component. 
+When build dev/design and content are all synced and requirements and decisions are documented, we're ready to release component on all touch points. 
+
+*Ddefinition of done:** 
+- [ ]Merge figma work to main and publish library
+- [ ]Component package is released
+- [ ]Publish new component on documentation website 
+- [ ]Related updates to other component pages are made, as needed
+- [ ]Inform engagement team of upcoming release 
+- [ ]Publish a release info on slack 
+
+**Acceptance criteria:** 
+- [ ]potential breaking changes were identified 
+- [ ]If breaking changes > creation of dedicated card to create specific content 
+- [ ]Component has been added or updated on the holidays example app
+- [ ]Component has zero accesibility violation on storybook
+
+**Deliverables:** 
+- [ ]Component code added to Github repository
+- [ ]Changelog
+- [ ]EN component page, poster, and assets available on Figma
+- [ ]FR component page, poster, and assets available on Figma
+- [ ]EN guidance is published to the website
+- [ ]FR guidance is published to the website
