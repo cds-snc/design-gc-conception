@@ -22,7 +22,7 @@ Owner : dev assigned on the card
 - [ ] Write draft of dev guidance
 - [ ] Handoff from draft dev guidance to documentation lead and tag the content owner 
 - [ ] Code review
-- [ ] After PR approval, merge component to staging
+- [ ]  Done when PR has been approved (not merged nor released yet)
 
 **Acceptance criteria:** 
 - [ ] Implement properties as stated in requirements doc
