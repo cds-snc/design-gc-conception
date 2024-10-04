@@ -11,7 +11,7 @@ Develop on component branch, push to staging and flag ready to merge when reviwe
 
 Owner : dev assigned on the card 
 
-**Definition of done:**  
+## ✅ Definition of Done / Outcomes
 - [ ] Prior to doing work, clarify scope of ticket with the designers (dev design sync or slack) and adjust if necessary
 - [ ] Check with DTO if there are upcoming changes to this component or potential impact if we were to update the component
 - [ ] Consider edge cases
