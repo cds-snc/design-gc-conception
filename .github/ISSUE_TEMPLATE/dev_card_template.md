@@ -25,7 +25,7 @@ Owner : dev assigned on the card
 - [ ] After PR approval, merge component to staging
 
 **Acceptance criteria:** 
-- [ ] Sync dev properties with Figma properties (design + dev)
+- [ ] Implement properties as stated in requirements doc
 - [ ] Passes storybook a11y test without any violation
 - [ ] WCAG Goal can be completed using a screen reader.
 - [ ] WCAG Visual elements observe color contrast requirements.
