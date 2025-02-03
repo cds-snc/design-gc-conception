@@ -6,6 +6,12 @@ labels: New | Nouveau
 assignees: ''
 
 ---
+> _When to use this template_
+> 
+> A publish ticket oversees the publication or release of a task. Here are a few examples:
+> - Publishing a new feature or new design, which requires figma merges and code releases
+> - Publishing content on the doucmentation website (could require a documentation ticket in some cases)
+> - There are multiple changes that needs to be published together (design, content, development, documentation)
 
 ## 📇 User story
 _Add here context on why we have to work on that_
@@ -39,5 +45,5 @@ _Add here the list of assumed steps that will be needed to complete the task_
 _Add here any context and or link that could be useful to understand the work_
 
 
-**. 🚫 Out of scope**
-_ If possible, give precisions on what is *not* part of this work_
+** 🚫 Out of scope**
+_If possible, give precisions on what is *not* part of this work_
