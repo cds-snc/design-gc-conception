@@ -1,7 +1,7 @@
 ---
 name: Publish card template
 about: Template to use when creating new release or publish tasks
-title: "Publish: [ New Issue - UPDATE TITLE ] "
+title: "Publish: [ New Issue - UPDATE TITLE ]"
 labels: New | Nouveau
 assignees: ''
 
@@ -10,8 +10,8 @@ assignees: ''
 > 
 > A publish ticket oversees the publication or release of a task. Here are a few examples:
 > - Publishing a new feature or new design, which requires figma merges and code releases
-> - Publishing content on the doucmentation website (could require a documentation ticket in some cases)
-> - There are multiple changes that needs to be published together (design, content, development, documentation)
+> - Publishing content on the documentation website (could require a documentation ticket in some cases)
+> - There are multiple changes that needs to be published together (design, content, development, documentation, engagement piece)
 
 ## 📇 User story
 _Add here context on why we have to work on that_
@@ -24,11 +24,11 @@ _Add here context on why we have to work on that_
 - [ ] FR Figma template
 
 ### Content
-- [ ] Done when content for has been approved
+- [ ] Done when content has been approved and finalized
 - [ ] Done when content has a French version
 
 ### Development
-- [ ] Done when development has merged PR
+- [ ] Done when development has merged the PR
 - [ ] Done when the code has been released
 
 ### Documentation
