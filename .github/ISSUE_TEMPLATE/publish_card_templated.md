@@ -29,6 +29,7 @@ _Add here context on why we have to work on that_
 
 ### Development
 - [ ] Done when development has merged PR
+- [ ] Done when the code has been released
 
 ### Documentation
 - [ ] Done when designs (EN and FR) has been published, with the links updated on the documentation website
@@ -38,7 +39,7 @@ _Add here context on why we have to work on that_
 _Add here the list of assumed steps that will be needed to complete the task_
 - [ ] Design ticket is finalized and ready for merge
 - [ ] Develop ticket is finalized and ready for merge
-- [ ] 
+- [ ] A release date has been set for dev, design and engagement
 - [ ] 
 
 ## 📝 More info
