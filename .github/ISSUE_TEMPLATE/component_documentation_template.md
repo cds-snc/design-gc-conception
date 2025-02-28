@@ -18,11 +18,11 @@ Including use cases, how to use guidance, accessibility guidelines and more.
 Add here all pertinent links , previous work done or informations related to the build of this particular component/template
 
 ### Definition of done :
-- []  Content guidance for the Design and accessibility section of the component has been reviewed with designer
-- []  Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
-- []  Identify and write component copy: set labels, error messages, or other copy, I18N code elements
-- []  Sent to Translation & Localization and tag
-- []  Bilingual review is done
+- [ ] Content guidance for the Design and accessibility section of the component has been reviewed with designer
+- [ ] Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
+- [ ] Identify and write component copy: set labels, error messages, or other copy, I18N code elements
+- [ ] Sent to Translation & Localization and tag
+- [ ] Bilingual review is done
 
 ### Acceptance criteria
 - [] Plain language
