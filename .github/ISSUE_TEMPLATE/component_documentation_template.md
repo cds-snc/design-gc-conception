@@ -1,5 +1,5 @@
 ---
-name: Build content. Card template
+name: Content
 about: Template to use when creating content tasks
 title: ''
 labels: ''
@@ -18,17 +18,14 @@ Including use cases, how to use guidance, accessibility guidelines and more.
 Add here all pertinent links , previous work done or informations related to the build of this particular component/template
 
 ### Definition of done :
-- []  Validation of Component ID (name, definition, example image) is validated
-- []  Use case as detailed in requirement doc is reviewed
-- []  Content guidance for the Design and accessibility section of the component has been reviewed with designer
-- []  Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
-- []  Identify and write component copy: set labels, error messages, or other copy, I18N code elements
-- []  Sent to Translation & Localization and tag
-- []  Bilingual review is done
+- [ ] Content guidance for the Design and accessibility section of the component has been reviewed with designer
+- [ ] Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
+- [ ] Identify and write component copy: set labels, error messages, or other copy, I18N code elements
+- [ ] Sent to Translation & Localization and tag
+- [ ] Bilingual review is done
 
 ### Acceptance criteria
-- [] Has EN and FR guidance
-- [] Plain language
-- [] Consistent with previous lexicon used in GCDS.
-- [] Writer does not flag any problem
-- [] Descriptive text for images are created as needed
+- [ ] Plain language
+- [ ] Consistent with previous lexicon used in GCDS.
+- [ ] Writer does not flag any problem
+- [ ] Descriptive text for images are created as needed
