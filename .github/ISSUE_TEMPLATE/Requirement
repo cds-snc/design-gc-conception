@@ -18,16 +18,16 @@ Including use cases, how to use guidance, accessibility guidelines and more.
 Add here all pertinent links , previous work done or informations related to the build of this particular component/template
 
 ### Definition of done :
-- [] Dpc Created based on [this template](https://docs.google.com/document/d/1EIbD6ydHCw1ywPYGUSfc9_DwbEBJuwM9ndkE37XtzmU/edit?tab=t.0)
-- [] all decisions and alignment on this component are summed up in this doc , supported by rationale and screen capture when needed
-- [] Link dev and design deliverables 
-- [] When build is done for dev and design and content, dev/design hand off this doc to PM
-- [] PM has reviewed and gives go for release based on all documented info and build
+- [ ] Doc Created based on [this template](https://docs.google.com/document/d/1EIbD6ydHCw1ywPYGUSfc9_DwbEBJuwM9ndkE37XtzmU/edit?tab=t.0)
+- [ ] All decisions and alignment on this component are summed up in this doc , supported by rationale and screen capture when needed
+- [ ] Link dev and design deliverables 
+- [ ] When build is done for dev and design and content, dev/design hand off this doc to PM
+- [ ] PM has reviewed and gives go for release based on all documented info and build
 
 ### Acceptance criteria
-- [] Design has updated requirement doc
-- [] Dev has updated requirement doc 
-- [] PM has reviewed 
+- [ ] Design has updated requirement doc
+- [ ] Dev has updated requirement doc 
+- [ ] PM has reviewed 
 
 Deliverable
-- [] Requirement doc up to date and linked to the EPIC card 
+- [ ] Requirement doc up to date and linked to the EPIC card 
