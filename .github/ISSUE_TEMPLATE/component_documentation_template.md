@@ -25,7 +25,7 @@ Add here all pertinent links , previous work done or informations related to the
 - [ ] Bilingual review is done
 
 ### Acceptance criteria
-- [] Plain language
-- [] Consistent with previous lexicon used in GCDS.
-- [] Writer does not flag any problem
+- [ ] Plain language
+- [ ] Consistent with previous lexicon used in GCDS.
+- [ ] Writer does not flag any problem
 - [] Descriptive text for images are created as needed
