@@ -1,7 +1,7 @@
 ---
-name: Content
+name: Content Card Template
 about: Template to use when creating content tasks
-title: ''
+title: 'Content:'
 labels: ''
 assignees: ''
 
