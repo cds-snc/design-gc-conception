@@ -1,8 +1,7 @@
-
 ---
-name: Requirement
+name: Requirement Card Template
 about: Template to use when creating or updating requirement doc related to GCDS library release
-title: 'Requirement'
+title: 'Requirement:'
 labels: ''
 assignees: ''
 ---
