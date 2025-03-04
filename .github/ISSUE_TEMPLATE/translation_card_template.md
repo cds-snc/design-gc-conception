@@ -1,32 +1,43 @@
 ---
-name: Translation Card Template
-about: Template to use when creating or updating translation tickets related to GCDS library release
-title: 'Translation:'
+name: Localization Card Template
+about: Template to use for localization or translation tasks related to GCDS library release
+title: 'Localization'
 labels: ''
 assignees: ''
 ---
 
-**Summary**: Card to capture the delivery needed for all content related work in EN and FR when adding a new item in the GC Design System on all its touch point : Figma, code and documentation website .
-Including use cases, how to use guidance, accessibility guidelines and more.
+**Summary**: Card to capture the steps and delivery needed for all localization related work from EN to FR and for all GC Design System touch points : Figma, code and documentation website.
 
-**Owner** : dev/designer duo assigned
+**Owner** : dedicated localization team member
 
-**Validation** : Product Manager 
+**Validation** : Design lead
 
-**Context** : additional information to complete work
-Add here all pertinent links , previous work done or informations related to the build of this particular component/template
-
-### Definition of done :
-- [ ] Doc Created based on [this template](https://docs.google.com/document/d/1EIbD6ydHCw1ywPYGUSfc9_DwbEBJuwM9ndkE37XtzmU/edit?tab=t.0)
-- [ ] All decisions and alignment on this component are summed up in this doc , supported by rationale and screen capture when needed
-- [ ] Link dev and design deliverables 
-- [ ] When build is done for dev and design and content, dev/design hand off this doc to PM
-- [ ] PM has reviewed and gives go for release based on all documented info and build
+**Context** : 
+additional information to complete work
+Add here 
+- [ ] content source
+- [ ] audience : dev, designers, public servants, end users
+- [ ] related requirement doc and decision docs
+- [ ] if applicable, previous tranlsation of this if applicable
+- [ ] if applicable, comparable or reference to keep in mind
 
 ### Acceptance criteria
-- [ ] Design has updated requirement doc
-- [ ] Dev has updated requirement doc 
-- [ ] PM has reviewed 
+- [ ] check if all info needed are there in context section
+- [ ] research new terminology and document decision, sources, and rationale
+- [ ] new term added to Phrase
+- [ ] Research and provide French examples or guidance
+- [ ] Produce French version
+- [ ] Ensure consistent terminology
+- [ ] Check for plain language and inclusive language
+- [ ] adjust formatting, punctuation (if importing to Figma)
+- [ ] review by design lead
+- [ ] hand off for publication 
 
-Deliverable
-- [ ] Requirement doc up to date and linked to the EPIC card 
+### Definition of done :
+- [ ] French version of content for publishing
+- [ ] Content is consistent, clear, and correct
+- [ ] Decisions documented   
+
+### Deliverable :
+- [ ] Document with both content to be translated and its translation.
+- [ ] If applicable, localization decisions with guidance, information architecture recommendantion and other proposed actions. 
