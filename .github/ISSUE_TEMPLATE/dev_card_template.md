@@ -1,39 +1,34 @@
 ---
 name: Dev Card template
 about: Template to use when creating development tasks
-title: ''
-labels: ''
+title: 'Dev: '
+labels: 'development'
 assignees: ''
 
 ---
-**Summary:** Development of the XXXXX component.
-Develop on component branch, push to staging and flag ready to merge when reviwed.
+## 📇 User story
+**As a** ___, 
 
-Owner : dev assigned on the card 
+**I want to** __, 
+
+**so that** ___.
+
+
 
 ## ✅ Definition of Done / Outcomes
-- [ ] Prior to doing work, clarify scope of ticket with the designers (dev design sync or slack) and adjust if necessary
-- [ ] Check with DTO if there are upcoming changes to this component or potential impact if we were to update the component
-- [ ] Consider edge cases
-- [ ] Describe component properties
-- [ ] Update Requirements doc with agreed specifications
-- [ ] Develop the component according to the requirements doc and design specs
-- [ ] Add component to storybook
-- [ ] Write draft of dev guidance
-- [ ] Handoff from draft dev guidance to documentation lead and tag the content owner 
-- [ ] Code review
-- [ ]  Done when PR has been approved (not merged nor released yet)
+_List the steps needed to do to meet the acceptance criteria_
+- [ ] Done when 
+- [ ] Done when 
 
-**Acceptance criteria:** 
-- [ ] Implement properties as stated in requirements doc
-- [ ] Passes storybook a11y test without any violation
-- [ ] WCAG Goal can be completed using a screen reader.
-- [ ] WCAG Visual elements observe color contrast requirements.
-- [ ] WCAG Manual accessibility testing meets WCAG 2.1 AA requirements.
-- [ ] Provides equal service in French and English.
-- [ ] Dev peer reviews 
+## 📜 Acceptance criteria
+_Add here the list of criteria that the task needs to meet before being considered done and complete_
+- [ ] 
+- [ ] 
 
-**Deliverables:** 
-- [ ]Proposal guidance handed off to content
-- [ ]Requirement doc updated 
-- [ ]Pull request, with approvals. Do not merge. 
+
+## 📝 More info
+_Add here any context and or link that could be useful to understand the work_
+
+
+** 🚫 Out of scope**
+_If possible, give precisions on what is *not* part of this work_
