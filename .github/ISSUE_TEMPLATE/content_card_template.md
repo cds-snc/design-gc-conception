@@ -7,25 +7,59 @@ assignees: ''
 
 ---
 
-**Summary**: Card to capture the delivery needed for all content related work in EN and FR when adding a new item in the GC Design System on all its touch point : Figma, code and documentation website .
-Including use cases, how to use guidance, accessibility guidelines and more.
+**Summary**: Card for generic content cards. For new component, refer to [this template](https://docs.google.com/document/d/1n-5R--fhFXdKjdSOi4VGJuiEM7jUc2JSHc6dk6t1rP4/edit?tab=t.m7wmcy9r1koc#bookmark=id.pl2h5tketmag)
 
-**Owner** : content designer
 
-**Validation** : Design lead as needed
+**Owner** : Designer assigned on the card
 
-**Context** : additional information to complete work
-Add here all pertinent links , previous work done or informations related to the build of this particular component/template
+**Default Assignee** :  Designers discuss items weekly and choose their own tasks to work on.
 
-### Definition of done :
-- [ ] Content guidance for the Design and accessibility section of the component has been reviewed with designer
-- [ ] Guidance for the Dev Build and accessibility section of the component has been reviewed with dev
-- [ ] Identify and write component copy: set labels, error messages, or other copy, I18N code elements
-- [ ] Sent to Translation & Localization and tag
-- [ ] Bilingual review is done
 
-### Acceptance criteria
-- [ ] Plain language
-- [ ] Consistent with previous lexicon used in GCDS.
-- [ ] Writer does not flag any problem
-- [ ] Descriptive text for images are created as needed
+### 📇 User story
+_Edit this BEFORE GROOMING when creating the card_
+
+**As a ___,**
+
+**I want to __,**
+
+**so that ___.**
+
+
+### ✅ Definition of done :
+_List what changes need to happen to meet the acceptance criteria_ 
+- [ ] 
+- [ ] 
+
+_List the steps needed to meet the acceptance criteria_ 
+- [ ] 
+- [ ] 
+
+
+
+### 📜 Acceptance criteria
+_Add here the list of criteria that the task needs to meet before being considered done and complete_
+
+- [ ] 
+- [ ] 
+
+_List the outputs_ 
+- [ ] 
+- [ ] 
+
+_List any standards/templates to follow_ 
+- [ ] 
+- [ ]
+
+### 🤝 Reviews 
+- [ ] Developer
+- [ ] Interaction designer 
+- [ ] Content designer 
+- [ ] Design lead 
+- [ ] Dev lead 
+- [ ] PM 
+
+### 📝 More info
+Add here any context, conversations, images, documents or links that could be useful to understand the work
+
+### 🚫Out of scope
+If possible, describe items not considered part of this work
