@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 ## 📇 User story
+_Edit this BEFORE GROOMING when creating the card_ 
+
 **As a** ___, 
 
 **I want to** __, 
