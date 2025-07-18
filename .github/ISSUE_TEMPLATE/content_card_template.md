@@ -35,7 +35,6 @@ _The following outputs are created_
 - [ ]
 
 ### 📜 Acceptance criteria
-```suggestion
 _User is able to_
 - [ ] _see this_
 - [ ] _do that_
