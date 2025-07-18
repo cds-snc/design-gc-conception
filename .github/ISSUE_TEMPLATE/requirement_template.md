@@ -1,32 +1,58 @@
 ---
-name: Requirement Card Template
+name: Requirement Generic Card Template
 about: Template to use when creating or updating requirement doc related to GCDS library release
-title: 'Requirement:'
+title: 'Requirements: '
 labels: ''
 assignees: ''
 ---
+**Summary** : this is a generic template to work on any requirements. 
+- for new feature : use [this template](https://docs.google.com/document/d/1n-5R--fhFXdKjdSOi4VGJuiEM7jUc2JSHc6dk6t1rP4/edit?tab=t.ho4yjtynvf9n#bookmark=id.py6pjbuebgmg)  
+- for update to existing requirements use [this template](https://docs.google.com/document/d/1n-5R--fhFXdKjdSOi4VGJuiEM7jUc2JSHc6dk6t1rP4/edit?tab=t.ho4yjtynvf9n#bookmark=id.ng8d6carfpue) 
 
-**Summary**: Card to capture the delivery needed for all content related work in EN and FR when adding a new item in the GC Design System on all its touch point : Figma, code and documentation website .
-Including use cases, how to use guidance, accessibility guidelines and more.
+**Owner** : Designer assigned on the card OR Dev/designer duo. 
 
-**Owner** : dev/designer duo assigned
+**Default assignee** : Designers discuss items weekly and choose their own tasks to work on.
 
-**Validation** : Product Manager 
+**📇 User story**: 
+_complete the following BEFORE GROOMING when creating the card_ 
+ 
+As a ___, 
 
-**Context** : additional information to complete work
-Add here all pertinent links , previous work done or informations related to the build of this particular component/template
+I want to __, 
 
-### Definition of done :
+so that ___.
+
+### ✅ Definition of done / actions
+_Steps that need to happen to complete the task_
 - [ ] Doc Created based on [this template](https://docs.google.com/document/d/1EIbD6ydHCw1ywPYGUSfc9_DwbEBJuwM9ndkE37XtzmU/edit?tab=t.0)
-- [ ] All decisions and alignment on this component are summed up in this doc , supported by rationale and screen capture when needed
-- [ ] Link dev and design deliverables 
-- [ ] When build is done for dev and design and content, dev/design hand off this doc to PM
-- [ ] PM has reviewed and gives go for release based on all documented info and build
+- [ ] Team has common vision of the objective(s) 
+- [ ] Feasibility and scope are clear to team
+- [ ] Change is compatible with GC Design System structure and principles 
+- [ ] Change does not introduce contradictions in the system 
+- [ ] Provisional agreement on names, location, and scope
 
-### Acceptance criteria
-- [ ] Design has updated requirement doc
-- [ ] Dev has updated requirement doc 
-- [ ] PM has reviewed 
+_The following outputs are created_ 
+- [ ] 
+- [ ] 
 
-Deliverable
-- [ ] Requirement doc up to date and linked to the EPIC card 
+### 📜 Acceptance criteria / checks
+_User is able to: \*see this, \*do that_
+- [ ]
+- [ ] 
+_The following standards/templates were followed_
+- [ ] 
+- [ ] 
+
+### 🤝 Reviews
+- [ ] Developer
+- [ ] Interaction designer 
+- [ ] Content designer 
+- [ ] Design lead 
+- [ ] Dev lead 
+- [ ] PM
+      
+### 📝 More info
+_Add here any context, conversations, images, documents or links that could be useful to understand the work_
+
+### 🚫 Out of scope
+_If possible, describe items not considered part of this work_
