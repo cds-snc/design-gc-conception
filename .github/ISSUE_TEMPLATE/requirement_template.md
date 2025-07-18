@@ -1,7 +1,7 @@
 ---
 name: Requirement Generic Card Template
 about: Template to use when creating or updating requirement doc related to GCDS library release
-title: 'Requirements:'
+title: 'Requirements: '
 labels: ''
 assignees: ''
 ---
@@ -22,8 +22,8 @@ I want to __,
 
 so that ___.
 
-### ✅ Definition of done :
-_List what changes need to happen to meet the acceptance criteria_
+### ✅ Definition of done / actions
+_Steps that need to happen to complete the task_
 - [ ] Doc Created based on [this template](https://docs.google.com/document/d/1EIbD6ydHCw1ywPYGUSfc9_DwbEBJuwM9ndkE37XtzmU/edit?tab=t.0)
 - [ ] Team has common vision of the objective(s) 
 - [ ] Feasibility and scope are clear to team
@@ -31,17 +31,15 @@ _List what changes need to happen to meet the acceptance criteria_
 - [ ] Change does not introduce contradictions in the system 
 - [ ] Provisional agreement on names, location, and scope
 
-List the steps needed to meet the acceptance criteria
+_The following outputs are created_ 
 - [ ] 
 - [ ] 
 
-### 📜 Acceptance criteria
-Add here the list of criteria that the task needs to meet before being considered done and complete
+### 📜 Acceptance criteria / checks
+_User is able to: \*see this, \*do that_
+- [ ]
 - [ ] 
-_List the outputs_
-- [ ] 
-- [ ] 
-_List any standards/templates to follow_
+_The following standards/templates were followed_
 - [ ] 
 - [ ] 
 
@@ -54,7 +52,7 @@ _List any standards/templates to follow_
 - [ ] PM
       
 ### 📝 More info
-Add here any context, conversations, images, documents or links that could be useful to understand the work
+_Add here any context, conversations, images, documents or links that could be useful to understand the work_
 
-### 🚫Out of scope
-If possible, describe items not considered part of this work
+### 🚫 Out of scope
+_If possible, describe items not considered part of this work_
