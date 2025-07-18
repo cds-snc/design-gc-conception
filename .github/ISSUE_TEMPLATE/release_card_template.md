@@ -1,7 +1,7 @@
 ---
 name: Release card template
 about: Template to use when ready to release a new piece of the Design System
-title: "Release: [ New Issue - UPDATE TITLE ]"
+title: "Release: "
 labels: New | Nouveau
 assignees: ''
 
