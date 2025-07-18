@@ -40,7 +40,7 @@ Done when users have been informed of the change and the community file update
 - [ ] All PRs moved into production
 
 ### 📝 More info
-Add here any context, conversations, images, documents or links that could be useful to understand the work
+_Add here any context, conversations, images, documents or links that could be useful to understand the work_
 
 ### 🚫 Out of scope 
 If possible, describe items not considered part of this work
