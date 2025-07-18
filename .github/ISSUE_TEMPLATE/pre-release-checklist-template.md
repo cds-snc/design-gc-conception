@@ -1,15 +1,15 @@
 ---
 name: Pre-release checklist template
-about: Simple rep-release  checklist when review is needed to decide if we're ready to release
-title: ''
+about: Simple pre-release checklist when review is needed to decide if we're ready to release
+title: 'Pre-release: '
 labels: ''
 assignees: ''
 
 ---
 ### Summary 
-this step should not create new work but help team to gather for in sync review and assess if a release is ready to go or not.
+This step should not create new work but help team to gather for in sync review and assess if a release is ready to go or not.
 
-**For complexe release involving breaking changes or other significant impact**, please refer to [this template](https://docs.google.com/document/d/1n-5R--fhFXdKjdSOi4VGJuiEM7jUc2JSHc6dk6t1rP4/edit?tab=t.yvopanekmn4s#bookmark=id.g7bu7npwc6un)
+**For complex releases involving breaking changes or other significant impacts**, please refer to [this template](https://docs.google.com/document/d/1n-5R--fhFXdKjdSOi4VGJuiEM7jUc2JSHc6dk6t1rP4/edit?tab=t.yvopanekmn4s#bookmark=id.g7bu7npwc6un)
 
 ### 📇 User story
 As a member of the GC Design System product team, I want to ____________ so that ________.
@@ -55,7 +55,7 @@ As a member of the GC Design System product team, I want to ____________ so that
 - [ ] This can be completed by gaining the 👍 or approvals on readiness from dev, design, product in sync and then from PRs or slack messages in the dev-design channel
 
 ### 📝 More info
-Add here any context, conversations, images, documents or links that could be useful to understand the work
+_Add here any context, conversations, images, documents or links that could be useful to understand the work_
 
-### 🚫Out of scope
-If possible, describe items not considered part of this work
+### 🚫 Out of scope
+_If possible, describe items not considered part of this work_
