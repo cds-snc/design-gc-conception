@@ -26,31 +26,26 @@ _Edit this BEFORE GROOMING when creating the card_
 
 
 ### ✅ Definition of done :
-_List what changes need to happen to meet the acceptance criteria_ 
+_Steps that need to happen to complete the task_
 - [ ] 
 - [ ] 
 
-_List the steps needed to meet the acceptance criteria_ 
-- [ ] 
-- [ ] 
-
-
-
-### 📜 Acceptance criteria
-_Add here the list of criteria that the task needs to meet before being considered done and complete_
-
-- [ ] 
-- [ ] 
-
-_List the outputs_ 
-- [ ] 
-- [ ] 
-
-_List any standards/templates to follow_ 
+_The following outputs are created_
 - [ ] 
 - [ ]
 
-### 🤝 Reviews 
+### 📜 Acceptance criteria
+```suggestion
+_User is able to_
+- [ ] _see this_
+- [ ] _do that_
+
+
+_The following standards/templates were followed_
+- [ ] 
+- [ ] 
+
+_The following reviews happened_
 - [ ] Developer
 - [ ] Interaction designer 
 - [ ] Content designer 
