@@ -1,8 +1,8 @@
 ---
 name: Design Card template
 about: Template to use when creating generic Design checklist
-title: 'Design'
-labels: ''
+title: 'Design: '
+labels: 'design'
 assignees: ''
 
 ---
@@ -17,38 +17,30 @@ As a ___,
 I want to __,
 so that ___.
 
-### ✅Definition of Done / Outcomes
-_List what changes need to happen to meet the acceptance criteria_
+### ✅ Definition of Done / actions
+_Steps that need to happen to complete the task_
 - [ ] 
 - [ ] 
 
-_List the steps needed to meet the acceptance criteria_
+_The following outputs are created_
+- [ ] 
+- [ ]
+### 📜 Acceptance criteria / checks
+_User is able to_
+- [ ] _see this_
+- [ ] _do that_
+
+
+_The following standards/templates were followed_
 - [ ] 
 - [ ] 
 
-### 📜Acceptance criteria
-_Add here the list of criteria that the task needs to meet before being considered done and complete_
-
-- [ ] 
-- [ ] 
-_List the outputs_ 
-
-- [ ] 
-- [ ] 
-- [ ] 
-_List any standards/templates to follow_
-
-- [ ] 
-- [ ] 
-- [ ] 
-_List the reviews needed_
-
-- [ ] 
+_The following reviews happened_
 - [ ] 
 - [ ] 
 
 ### 📝 More info
-Add here any context, conversations, images, documents or links that could be useful to understand the work
+_Add here any context, conversations, images, documents or links that could be useful to understand the work_
 
-#### 🚫Out of scope
-If possible, describe items not considered part of this work
+#### 🚫 Out of scope
+_If possible, describe items not considered part of this work_
