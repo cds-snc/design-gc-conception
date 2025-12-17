@@ -58,22 +58,15 @@ jobs:
           ISSUE_TITLE=$(echo "$ISSUE_TITLE" | sed 's/"/\\"/g')
           json=$(cat <<EOF
           {
-            "blocks": [
+          "blocks": [
               {
-                "type": "section",
-                "text": {
+              "type": "section",
+              "text": {
                   "type": "mrkdwn",
-                  "text": ":github: New GitHub issue created by `$ISSUE_CREATOR`"
-                }
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "- <$ISSUE_URL|#$ISSUE_NUMBER: $ISSUE_TITLE>"
-                }
+                  "text": ":github: GitHub issue created by \`$ISSUE_CREATOR\`\n<$ISSUE_URL|#$ISSUE_NUMBER: $ISSUE_TITLE>"
               }
-            ]
+              }
+          ]
           }
           EOF
           )
