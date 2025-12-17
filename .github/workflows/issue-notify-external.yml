@@ -1,0 +1,80 @@
+name: Issue created by external user
+
+on:
+  workflow_call:
+    inputs:
+      issue_creator:
+        description: 'Username of the issue creator'
+        required: true
+        type: string
+      issue_title:
+        description: 'Title of the issue'
+        required: true
+        type: string
+      issue_url:
+        description: 'URL of the issue'
+        required: true
+        type: string
+      issue_number:
+        description: 'Issue number'
+        required: true
+        type: number
+
+jobs:
+  notify-external-issue:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'cds-snc'
+
+    steps:
+      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        id: sre-app-token
+        with:
+          app-id: ${{ secrets.SRE_BOT_RO_APP_ID }}
+          private-key: ${{ secrets.SRE_BOT_RO_PRIVATE_KEY }}
+
+      - name: Check issue creator team membership
+        id: check_team
+        env:
+          GH_TOKEN: ${{ steps.sre-app-token.outputs.token }}
+          ISSUE_CREATOR: ${{ inputs.issue_creator }}
+        run: |       
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/orgs/cds-snc/teams/design-system/memberships/$ISSUE_CREATOR")
+
+          [[ "$HTTP_CODE" == "200" ]] && IS_MEMBER="true" || IS_MEMBER="false"
+          echo "is_member=$IS_MEMBER" >> $GITHUB_OUTPUT
+
+      - name: Notify Slack for external issue
+        if: steps.check_team.outputs.is_member == 'false'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_ISSUE_CREATED_URL }}
+          ISSUE_CREATOR: ${{ inputs.issue_creator }}
+          ISSUE_TITLE: ${{ inputs.issue_title }}
+          ISSUE_URL: ${{ inputs.issue_url }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: |          
+          ISSUE_TITLE=$(echo "$ISSUE_TITLE" | sed 's/"/\\"/g')
+          json=$(cat <<EOF
+          {
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": ":github: New GitHub issue created by `$ISSUE_CREATOR`"
+                }
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "- <$ISSUE_URL|#$ISSUE_NUMBER: $ISSUE_TITLE>"
+                }
+              }
+            ]
+          }
+          EOF
+          )
+          curl -X POST -H 'Content-type: application/json' --data "$json" "$SLACK_WEBHOOK_URL"
