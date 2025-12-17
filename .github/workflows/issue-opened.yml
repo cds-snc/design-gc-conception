@@ -11,6 +11,7 @@ permissions:
 jobs:
   notify-external:
     uses: ./.github/workflows/issue-notify-external.yml
+    secrets: inherit
     with:
       issue_creator: ${{ github.event.issue.user.login }}
       issue_title: ${{ github.event.issue.title }}
