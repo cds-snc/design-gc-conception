@@ -1,4 +1,4 @@
-name: Issue created by external user
+name: Issue notify for external users
 
 on:
   workflow_call:
@@ -49,7 +49,7 @@ jobs:
       - name: Notify Slack for external issue
         if: steps.check_team.outputs.is_member == 'false'
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_ISSUE_CREATED_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_GITHUB_CONTRIBUTIONS }}
           ISSUE_CREATOR: ${{ inputs.issue_creator }}
           ISSUE_TITLE: ${{ inputs.issue_title }}
           ISSUE_URL: ${{ inputs.issue_url }}

@@ -1,4 +1,4 @@
-name: Check external issues
+name: Issue opened
 
 on:
   issues:
