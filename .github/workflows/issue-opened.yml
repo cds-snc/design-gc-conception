@@ -1,0 +1,18 @@
+name: Issue opened
+
+on:
+  issues:
+    types: 
+      - opened
+
+permissions:
+  contents: read
+
+jobs:
+  notify-external:
+    uses: ./.github/workflows/issue-notify-external.yml
+    with:
+      issue_creator: ${{ github.event.issue.user.login }}
+      issue_title: ${{ github.event.issue.title }}
+      issue_url: ${{ github.event.issue.html_url }}
+      issue_number: ${{ github.event.issue.number }}
