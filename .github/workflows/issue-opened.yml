@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   notify-external:
-    uses: ./.github/workflows/issue-notify-external.yml@main
+    uses: ./.github/workflows/issue-notify-external.yml
     with:
       issue_creator: ${{ github.event.issue.user.login }}
       issue_title: ${{ github.event.issue.title }}
