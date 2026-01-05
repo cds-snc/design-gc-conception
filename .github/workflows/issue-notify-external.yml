@@ -55,7 +55,7 @@ jobs:
           ISSUE_URL: ${{ inputs.issue_url }}
           ISSUE_NUMBER: ${{ inputs.issue_number }}
         run: |          
-          ISSUE_TITLE=$(echo "$ISSUE_TITLE" | sed 's/"/\\"/g')
+          ISSUE_TITLE=$(echo "$ISSUE_TITLE" | sed 's/&/\&amp;/g' | sed 's/</\&lt;/g' | sed 's/>/\&gt;/g' | sed 's/"/\\"/g')
           json=$(cat <<EOF
           {
           "blocks": [
