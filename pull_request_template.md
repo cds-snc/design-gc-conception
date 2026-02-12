@@ -22,7 +22,7 @@ _TODO: Fill in test instructions for the reviewer. Describe any steps needed to 
 - [ ] I have checked accessiblity and ensured all accessiblity tests pass. :accessibility:
 - [ ] I have added tests for added functionality or changed existing tests, as needed.
 - [ ] I have added or updated documentation, if needed.
-- [ ] For visual design changes, ping @sukhichuhan-cds.
+- [ ] For visual design changes, post in dev-design slack channel
 
 # 📝 Reviewer checklist | Liste de vérification du réviseur
 
