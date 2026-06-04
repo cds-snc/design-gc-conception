@@ -70,4 +70,11 @@ jobs:
           }
           EOF
           )
-          curl -X POST -H 'Content-type: application/json' --data "$json" "$SLACK_WEBHOOK_URL"
+          HTTP_CODE=$(curl -sS -o /tmp/slack-webhook-response -w "%{http_code}" \
+            -X POST -H 'Content-type: application/json' --data "$json" "$SLACK_WEBHOOK_URL")
+
+          if [[ "$HTTP_CODE" != "200" ]]; then
+            echo "Slack notification failed with HTTP status $HTTP_CODE"
+            cat /tmp/slack-webhook-response
+            exit 1
+          fi
