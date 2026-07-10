@@ -27,9 +27,10 @@ textutil -convert txt -stdout "/path/to/test-result.docx"
 ### 3. Extract New Issues
 Extract issues from new test results:
 - Issue type and category
+- Component affected (e.g., Table, Button, Input, etc.)
+- URL to component documentation on https://design-system.alpha.canada.ca/en/
 - Assistive technology used
 - Issue description
-- Component affected
 - WCAG criteria (if provided)
 
 ### 4. Compare and Identify Updates
@@ -102,7 +103,7 @@ This issue was also observed in test request: [Test request URL]
 - Test configuration: [Assistive technology on browser]
 
 ---
-*This comment was generated based on accessibility test results from Fable testing.*
+*This comment was AI-generated based on accessibility test results from Fable testing.*
 ```
 
 **New information to add**:
@@ -155,8 +156,18 @@ curl -X POST \
 
 ### 8. Create New Issues
 For each new issue to create, use GitHub CLI:
+
+**Important**: The issue markdown files contain frontmatter (name, about, title, labels, assignees) for metadata purposes. This must be stripped before creating the GitHub issue.
+
 ```bash
-gh issue create --title "[title]" --body-file [issue-file] -l [label1] -l [label2] ...
+# Strip frontmatter and create issue
+sed -n '/^## 📇 User story/,$p' [issue-file] | gh issue create --title "[title]" --body - -l [label1] -l [label2] ...
+```
+
+Alternatively, create a temporary file without frontmatter:
+```bash
+sed -n '/^## 📇 User story/,$p' [issue-file] > /tmp/issue-body.md
+gh issue create --title "[title]" --body-file /tmp/issue-body.md -l [label1] -l [label2] ...
 ```
 
 Record the GitHub issue number assigned to each created issue.

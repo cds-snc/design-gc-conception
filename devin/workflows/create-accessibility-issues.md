@@ -21,6 +21,8 @@ textutil -convert txt -stdout "/path/to/test-result.docx"
 ### 2. Extract and Categorize Issues
 Review each test document and extract:
 - Issue type and category
+- Component affected (e.g., Table, Button, Input, etc.)
+- URL to component documentation on https://design-system.alpha.canada.ca/en/
 - Assistive technology used
 - Issue description
 - WCAG criteria (if provided)
@@ -51,10 +53,20 @@ For each unique issue, create a markdown file in `accessibility_issues/` directo
 ---
 name: Accessibility Issue
 about: [Brief description]
-title: "[A11y] [Descriptive title]"
+title: "[A11y] [Component] - [Descriptive title]"
 labels: 'Accessiblity | Accessibilité,Bug | Bogue,New | Nouveau,[type-labels],[priority-label]'
 assignees: ''
 ```
+
+**Label mapping based on type of change required**:
+- **Design change only**: First intervention needed is design decision (e.g., color contrast, spacing, visual hierarchy). Design team leads, then implementation follows.
+- **Code change only**: First intervention needed is code fix (e.g., ARIA attributes, keyboard navigation, focus management). Development team leads.
+- **Content design change only**: First intervention needed is content/writing (e.g., labels, instructions, error messages). Content team leads.
+- **Both design and code**: Collaborative intervention required - design and code decisions are interdependent and must be made together.
+- **Both design and content design**: Collaborative intervention required - design and content decisions are interdependent.
+- **Both code and content design**: Collaborative intervention required - code and content decisions are interdependent.
+- **All three**: Collaborative intervention required - design, code, and content decisions are interdependent.
+- **Adaptive technology limitation**: No fix possible through component design or code changes.
 
 **Label mapping based on type of change required**:
 - Design change only → `design`
@@ -86,6 +98,8 @@ As a [user type], I want to [goal], so that [benefit].
 
 ### Source
 - Test request: [URL from app.makeitfable.com]
+- Component: [Component name]
+- Component documentation: [URL to component on design-system.alpha.canada.ca]
 - Assistive technology: [Technology used, e.g., Voice Control on Chrome]
 - WCAG criteria: [If provided]
 
@@ -99,7 +113,7 @@ As a [user type], I want to [goal], so that [benefit].
 ### Priority
 **[High/Medium/Low]** - [Justification based on task completion impact]
 
-### Type of change required
+### Type of change required (create additional implementation card after if required)
 - [ ] Design change only
 - [ ] Code change only
 - [ ] Content design change only
@@ -116,7 +130,7 @@ As a [user type], I want to [goal], so that [benefit].
 [What is not included in this fix]
 
 ---
-*This issue was generated based on accessibility test results from Fable testing.*
+*This issue was AI-generated based on accessibility test results from Fable testing.*
 ```
 
 ### 5. Assign Priorities
@@ -132,8 +146,18 @@ Mark issues as adaptive technology limitations only when:
 
 ### 7. Create GitHub Issues
 For each unique issue file, create a GitHub issue using GitHub CLI:
+
+**Important**: The issue markdown files contain frontmatter (name, about, title, labels, assignees) for metadata purposes. This must be stripped before creating the GitHub issue.
+
 ```bash
-gh issue create --title "[title]" --body-file [issue-file] -l [label1] -l [label2] ...
+# Strip frontmatter and create issue
+sed -n '/^## 📇 User story/,$p' [issue-file] | gh issue create --title "[title]" --body - -l [label1] -l [label2] ...
+```
+
+Alternatively, create a temporary file without frontmatter:
+```bash
+sed -n '/^## 📇 User story/,$p' [issue-file] > /tmp/issue-body.md
+gh issue create --title "[title]" --body-file /tmp/issue-body.md -l [label1] -l [label2] ...
 ```
 
 Record the GitHub issue number assigned to each created issue.
