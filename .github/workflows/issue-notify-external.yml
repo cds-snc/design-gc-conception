@@ -56,7 +56,20 @@ jobs:
           ISSUE_NUMBER: ${{ inputs.issue_number }}
         run: |
           ISSUE_TITLE=$(echo "$ISSUE_TITLE" | sed 's/&/\&amp;/g' | sed 's/</\&lt;/g' | sed 's/>/\&gt;/g' | sed 's/"/\\"/g')
-          json='{"blocks":[{"type":"section","text":{"type":"mrkdwn","text":":github: GitHub issue created by `'"$ISSUE_CREATOR"'`\\n<'"$ISSUE_URL"'|#'"$ISSUE_NUMBER"': '"$ISSUE_TITLE"'>\\n\\nIC & OLs: \\nRefer to <https://docs.google.com/document/d/1MCWlU1W53x_hz-li_H5Bs4UslROEZixJ5-Kle95MQxQ/edit?tab=t.0#heading=h.eks9xht6v66m|instructions for providing a response> to triage bugs, feature requests, contributions\\nIf it'\''s a feature request/contribution, individually leave a :white_check_mark: if it'\''s easy to accept or a :x: if it'\''s easy to decline\\nIf this request receives emoji agreement for accepting/declining from both the IC&OL, provide an acceptance/rejection response on Github. Leave a :speech_balloon: to indicate this step is done."}}]}'
+          json=$(cat <<EOF
+          {
+          "blocks": [
+              {
+              "type": "section",
+              "text": {
+                  "type": "mrkdwn",
+                  "text": ":github: GitHub issue created by \`$ISSUE_CREATOR\`\n<$ISSUE_URL|#$ISSUE_NUMBER: $ISSUE_TITLE>\n\nIC & OLs: \nRefer to <https://docs.google.com/document/d/1MCWlU1W53x_hz-li_H5Bs4UslROEZixJ5-Kle95MQxQ/edit?tab=t.0#heading=h.eks9xht6v66m|instructions for providing a response> to triage bugs, feature requests, contributions\nIf it's a feature request/contribution, individually leave a :white_check_mark: if it's easy to accept or a :x: if it's easy to decline\nIf this request receives emoji agreement for accepting/declining from both the IC&OL, provide an acceptance/rejection response on Github. Leave a :speech_balloon: to indicate this step is done."
+              }
+              }
+          ]
+          }
+          EOF
+          )
           HTTP_CODE=$(curl -sS -o /tmp/slack-webhook-response -w "%{http_code}" \
             -X POST -H 'Content-type: application/json' --data "$json" "$SLACK_WEBHOOK_URL")
 
